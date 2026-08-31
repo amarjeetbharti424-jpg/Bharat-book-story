@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    Hello, World!
+  </h1>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bharat Story Book</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#fff8ef;
+    color:#292929;
+}
+
+header{
+    background:linear-gradient(135deg,#8b1e1e,#e87922);
+    color:white;
+    text-align:center;
+    padding:30px 15px;
+}
+
+header h1{
+    margin:0;
+    font-size:34px;
+}
+
+header p{
+    font-size:17px;
+}
+
+nav{
+    background:white;
+    padding:12px;
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    position:sticky;
+    top:0;
+    z-index:10;
+    box-shadow:0 2px 8px #0002;
+}
+
+nav a{
+    text-decoration:none;
+    color:#8b1e1e;
+    border:1px solid #ddd;
+    padding:8px 14px;
+    border-radius:20px;
+    white-space:nowrap;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+.search{
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    font-size:16px;
+}
+
+h2{
+    color:#8b1e1e;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+    gap:18px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 15px #0002;
+    border-top:5px solid #e87922;
+}
+
+.card h3{
+    color:#8b1e1e;
+}
+
+button{
+    background:#8b1e1e;
+    color:white;
+    border:0;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.story{
+    display:none;
+    margin-top:15px;
+    line-height:1.8;
+    background:#fff4df;
+    padding:15px;
+    border-radius:10px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>🇮🇳 Bharat Story Book</h1>
+
+<p>हर कहानी में भारत की एक नई पहचान</p>
+
+</header>
+
+
+<nav>
+
+<a href="#home">होम</a>
+
+<a href="#history">ऐतिहासिक</a>
+
+<a href="#mythology">पौराणिक</a>
+
+<a href="#inspiration">प्रेरणादायक</a>
+
+<a href="#kids">बच्चों की कहानियाँ</a>
+
+</nav>
+
+
+<div class="container" id="home">
+
+<h2>📖 Bharat Story Book में आपका स्वागत है</h2>
+
+<p>
+भारत के इतिहास, संस्कृति और महान व्यक्तित्वों की
+रोचक कहानियाँ पढ़िए।
+</p>
+
+<input
+class="search"
+id="search"
+type="text"
+placeholder="🔍 कहानी खोजें..."
+onkeyup="searchStory()"
+>
+
+
+<h2 id="history">🇮🇳 ऐतिहासिक कहानियाँ</h2>
+
+<div class="grid" id="stories">
+
+
+<div class="card">
+
+<h3>⚔️ छत्रपति शिवाजी महाराज</h3>
+
+<p>
+शिवाजी महाराज के साहस, बुद्धिमानी और
+स्वराज्य के संघर्ष की कहानी।
+</p>
+
+<button onclick="showStory('shivaji')">
+कहानी पढ़ें
+</button>
+
+<div class="story" id="shivaji">
+
+<h3>छत्रपति शिवाजी महाराज और स्वराज्य</h3>
+
+<p>
+छत्रपति शिवाजी महाराज भारत के महान
+योद्धाओं और कुशल शासकों में से एक थे।
+उनकी माता जीजाबाई ने उन्हें बचपन से ही
+साहस, न्याय और स्वाभिमान की शिक्षा दी।
+</p>
+
+<p>
+शिवाजी महाराज ने अपने साथियों के साथ
+मिलकर स्वराज्य की स्थापना का सपना देखा।
+उन्होंने कठिन परिस्थितियों में भी हार नहीं मानी
+और अपनी रणनीति तथा साहस से अनेक किलों पर
+अपना अधिकार स्थापित किया।
+</p>
+
+<p>
+उनका जीवन हमें सिखाता है कि कठिन परिस्थितियों
+में भी अपने लक्ष्य के प्रति दृढ़ रहना चाहिए।
+</p>
+
+<p><b>🌟 सीख:</b> साहस, बुद्धिमानी और दृढ़ संकल्प
+से बड़ी से बड़ी कठिनाई का सामना किया जा सकता है।</p>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h3>🛡️ महाराणा प्रताप</h3>
+
+<p>
+महाराणा प्रताप के साहस और स्वाभिमान की
+प्रेरणादायक कहानी।
+</p>
+
+<button onclick="showStory('pratap')">
+कहानी पढ़ें
+</button>
+
+<div class="story" id="pratap">
+
+<h3>महाराणा प्रताप</h3>
+
+<p>
+महाराणा प्रताप ने अपने स्वाभिमान और
+स्वतंत्रता के लिए जीवनभर संघर्ष किया।
+कठिन परिस्थितियों में भी उन्होंने
+हिम्मत नहीं छोड़ी।
+</p>
+
+<p><b>🌟 सीख:</b> अपने सिद्धांतों और सम्मान
+के लिए दृढ़ रहना चाहिए।</p>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h3>🔥 रानी लक्ष्मीबाई</h3>
+
+<p>
+झाँसी की रानी के साहस और वीरता की कहानी।
+</p>
+
+<button onclick="showStory('rani')">
+कहानी पढ़ें
+</button>
+
+<div class="story" id="rani">
+
+<h3>रानी लक्ष्मीबाई</h3>
+
+<p>
+रानी लक्ष्मीबाई ने 1857 के विद्रोह के दौरान
+असाधारण साहस दिखाया। झाँसी की रक्षा के लिए
+उन्होंने संघर्ष किया और वीरता की मिसाल कायम की।
+</p>
+
+<p><b>🌟 सीख:</b> साहस और आत्मविश्वास से
+हर चुनौती का सामना किया जा सकता है।</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<h2 id="mythology">🕉️ पौराणिक कहानियाँ</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>श्रीकृष्ण की प्रेरणादायक कथा</h3>
+
+<p>
+भगवान श्रीकृष्ण से जुड़ी नीति और जीवन की सीख।
+</p>
+
+<button>जल्द पढ़ें</button>
+
+</div>
+
+<div class="card">
+
+<h3>रामायण की कथा</h3>
+
+<p>
+मर्यादा, सत्य और धर्म की प्रेरणादायक कहानी।
+</p>
+
+<button>जल्द पढ़ें</button>
+
+</div>
+
+</div>
+
+
+<h2 id="inspiration">💪 प्रेरणादायक कहानियाँ</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>हार मत मानो</h3>
+
+<p>
+असफलता के बाद भी प्रयास करते रहने की कहानी।
+</p>
+
+<button>जल्द पढ़ें</button>
+
+</div>
+
+<div class="card">
+
+<h3>सफलता का रहस्य</h3>
+
+<p>
+मेहनत और अनुशासन से सफलता प्राप्त करने की कहानी।
+</p>
+
+<button>जल्द पढ़ें</button>
+
+</div>
+
+</div>
+
+
+<h2 id="kids">👦 बच्चों की कहानियाँ</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>🐰 चतुर खरगोश</h3>
+
+<p>
+बुद्धि से बड़ी समस्या को हल करने वाली मजेदार कहानी।
+</p>
+
+<button>जल्द पढ़ें</button>
+
+</div>
+
+<div class="card">
+
+<h3>🦁 शेर और चूहा</h3>
+
+<p>
+छोटा व्यक्ति भी बड़ी मदद कर सकता है।
+</p>
+
+<button>जल्द पढ़ें</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<footer>
+
+<p>🇮🇳 Bharat Story Book</p>
+
+<p>भारत की कहानियों की अपनी दुनिया</p>
+
+<p>© 2026 Bharat Story Book</p>
+
+</footer>
+
+
+<script>
+
+function showStory(id){
+
+let story=document.getElementById(id);
+
+if(story.style.display==="block"){
+
+story.style.display="none";
+
+}else{
+
+story.style.display="block";
+
+}
+
+}
+
+
+function searchStory(){
+
+let input=document
+.getElementById("search")
+.value
+.toLowerCase();
+
+let cards=document
+.querySelectorAll("#stories .card");
+
+cards.forEach(function(card){
+
+let text=card.innerText.toLowerCase();
+
+if(text.includes(input)){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
